@@ -1,0 +1,58 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+ <meta charset="utf-8">
+ <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="main.css">
+ <title>電卓</title>
+ </head>
+ 
+ <body>
+　　<main class="iphone-screen">
+　　  <div class="iphone-status-bar"><p id="iphone-clock"></p><p>5G<img class="iphone-battery" src="iphone_battery.jpeg"></p></div>
+      
+      <table>
+       <tr>
+         <td colspan="4">
+           <input type="text" id="result" value="0" disabled>
+         </td>
+       </tr>
+      
+       <tr>
+         <td colspan="2"><button type="button" class="clear" value="C" onclick="clickC()">C</button></td>
+         <td><button type="button" class="positive-negative" onclick="clickPosNeg()">+/-</button></td>
+         <td><button type="button" class="operation divide" value="/" onclick="clickOpe(this)">÷</button></td>
+       </tr>
+      
+       <tr>
+         <td><button type="button" class="number" value="7" onclick="clickNum(this)">7</button></td>
+         <td><button type="button" class="number" value="8" onclick="clickNum(this)">8</button></td>
+         <td><button type="button" class="number" value="9" onclick="clickNum(this)">9</button></td>
+         <td><button type="button" class="operation multiply" value="*" onclick="clickOpe(this)">×</button></td>
+       </tr>
+        
+       <tr>
+         <td><button type="button" class="number" value="4" onclick="clickNum(this)">4</button></td>
+         <td><button type="button" class="number" value="5" onclick="clickNum(this)">5</button></td>
+         <td><button type="button" class="number" value="6" onclick="clickNum(this)">6</button></td>
+         <td><button type="button" class="operation minus" value="-" onclick="clickOpe(this)">-</button></td>
+       </tr>
+
+       <tr>
+         <td><button type="button" class="number" value="1" onclick="clickNum(this)">1</button></td>
+         <td><button type="button" class="number" value="2" onclick="clickNum(this)">2</button></td>
+         <td><button type="button" class="number" value="3" onclick="clickNum(this)">3</button></td>
+         <td><button type="button" class="operation plus" value="+" onclick="clickOpe(this)">+</button></td>
+       </tr>
+
+       <tr>
+         <td colspan="2" ><button type="button" class="number zero" value="0" onclick="clickNum(this)">0</button></td>
+         <td><button type="button" class="number" value="." onclick="clickNum(this)">.</button></td>
+         <td><button type="button" class="equal" value="=" onclick="clickEqual()">=</button></td>
+       </tr>
+      </table>
+    </main>  
+ <script type="text/javascript" src="main.js"></script>
+
+ </body>
+ </html>
